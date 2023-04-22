@@ -3,7 +3,7 @@ import customtkinter as ctk
 import webbrowser
 import openai
 
-openai.api_key = "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"
+openai.api_key = "Your API Key"
 
 ctk.set_default_color_theme("theme.json")
 ctk.set_appearance_mode('Dark')
