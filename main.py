@@ -55,7 +55,7 @@ class SideBarFrame(ctk.CTkFrame):
         
         #About Us
         def abrirEnlaceGit(event):
-            webbrowser.open_new("https://github.com/4nd1-dev")
+            webbrowser.open_new("https://github.com/andev-code")
             
         def aboutMeEvent():
             self.about_us = ctk.CTkToplevel(app)
@@ -66,14 +66,14 @@ class SideBarFrame(ctk.CTkFrame):
             self.label = ctk.CTkLabel(self.about_us, font=("Sans-Serif", 20), text="GrowBot es un Software OpenSource desarrollado en Python completamente por 4nd1-Dev, puedes encontrarlo en mi repositorio de GitHub", anchor="w", wraplength=450)
             self.label.grid(row=0, column=0, padx=20, pady=20)
             
-            self.label = ctk.CTkLabel(self.about_us, font=("Sans-Serif", 18, "bold"), text="4nd1-Dev es un desarrollador Junior enfocado en el desarrollo web y en el desarrollo de Aplicaciones Móviles Multiplataformas y de Escritorio mediante el empleo de Frameworks de Python", anchor="w", wraplength=450)
+            self.label = ctk.CTkLabel(self.about_us, font=("Sans-Serif", 18, "bold"), text="andev es un desarrollador Junior enfocado en el desarrollo web y en el desarrollo de Aplicaciones Móviles Multiplataformas y de Escritorio mediante el empleo de Frameworks de Python", anchor="w", wraplength=450)
             self.label.grid(row=1, column=0, padx=20, pady=20)
             
             self.enlaceGit = ctk.CTkLabel(self.about_us, text="Sígueme en GitHub", text_color=("#ffffff", "#ffffff"),font=("Sans-Serif", 18), fg_color=("#000000","#000000"), padx=10, pady=10, cursor="hand2")
             self.enlaceGit.grid(row=2, column=0, padx=20, pady=20)
             self.enlaceGit.bind("<Button-1>", abrirEnlaceGit)
             
-            self.copyright = ctk.CTkLabel(self.about_us, text="@Todos los Derechos Reservados a | 4nd1-dev", state="disable")
+            self.copyright = ctk.CTkLabel(self.about_us, text="@Todos los Derechos Reservados a | andev", state="disable")
             self.copyright.grid(row=3, column=0, padx=10, pady=(20,10))
         
         self.title = ctk.CTkButton(self, text="About Me", font=('Sans-Serif', 15, 'bold'), fg_color="transparent", hover_color=("#ee7733","#ee7700"), text_color=("#000000", "#ffffff"), command=aboutMeEvent)
